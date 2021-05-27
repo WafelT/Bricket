@@ -1,0 +1,22 @@
+.mobile__nav {
+    display: none;
+    
+    @include breakpoint ($mobile__575-bp) {
+        display: flex;
+    }
+}
+
+.mobile__nav-wrapper {
+    width: 100%;
+    margin: 23px 10px 24px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    left: 0;
+
+    @include breakpoint ($mobile__440-bp) {
+        margin: 12px 0 16px;
+    }
+}

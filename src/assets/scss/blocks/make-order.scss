@@ -1,0 +1,113 @@
+.order {
+    padding: 107px 0;
+    background-color: #F3F3F3;
+
+    @include breakpoint ($tablet__768-bp) {
+        padding: 83px 0;
+    }
+
+    @include breakpoint ($mobile__400-bp) {
+        padding: 38px 0 60px;
+    }
+}
+
+.order__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint ($desktop__1200-bp) {
+        align-items: center;
+    }
+
+    @include breakpoint ($tablet__768-bp) {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include breakpoint ($mobile__575-bp) {
+        padding: 0 15px;
+    }
+}
+
+.order__information {
+    width: 60%;
+
+    @include breakpoint ($tablet__992-bp) {
+        width: auto;
+    }
+
+    @include breakpoint ($tablet__768-bp) {
+        margin-bottom: 39px;
+    }
+
+    @include breakpoint ($mobile__400-bp) {
+        margin-bottom: 43px;
+    }
+}
+
+.order__heading {
+    font-size: 30px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    @include breakpoint ($tablet__992-bp) {
+        display: none;
+    }
+
+    &--tb {
+        display: none;
+        margin-bottom: 63px;
+        margin-left: 42px;
+
+    }
+    
+    @include breakpoint ($tablet__992-bp) {
+        &--tb {
+            display: flex;
+        }
+    }
+
+    @include breakpoint ($tablet__768-bp) {
+        display: flex;
+        font-size: 28px;
+        margin-bottom: 34px;
+    }
+
+    @include breakpoint ($tablet__768-bp) {
+        &--tb {
+            display: none;
+        }
+    }
+
+    @include breakpoint ($mobile__400-bp) {
+        margin-bottom: 15px;
+
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.order__paragraph {
+    width: 95%;
+    margin-top: 24px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $paragraph-color;
+
+    @include breakpoint ($desktop__1200-bp) {
+        font-size: 15px;
+    }
+
+    @include breakpoint ($tablet__992-bp) {
+        font-size: 18px;
+        margin: 0 !important;
+    }
+
+    @include breakpoint ($mobile__400-bp) {
+        font-size: 14px;
+    }
+}

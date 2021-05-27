@@ -1,0 +1,213 @@
+.footer {
+    background-color: #333;
+    padding: 34px 0 52px;
+
+    color: $white;
+
+    @include breakpoint ($tablet__992-bp) {
+        padding-top: 40px;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint ($tablet__992-bp) {
+        flex-direction: column;
+        margin-left: 45px;
+    }
+
+    @include breakpoint ($tablet__768-bp) {
+        margin-left: 0;
+    }
+
+    @include breakpoint ($mobile__575-bp) {
+        padding: 0 15px;
+    }
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__logo-heading {
+    margin-left: 13px;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+
+    &:before {
+        content: "";
+        height: 2px;
+        width: 76%;
+        background-color: $white;
+        margin-left: 1.5px;
+    }
+}
+
+.footer__information-paragraph {
+    width: 200px;
+    margin-top: 20px;
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer__navigation, .footer__contacts {
+    margin-top: 47px;
+
+    @include breakpoint ($tablet__992-bp) {
+        margin-top: 63px;
+    }
+}
+
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__ul {
+    display: flex;
+    
+    color: $white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+    
+    @include breakpoint ($mobile__440-bp) {
+        flex-direction: column;
+    }
+}
+
+.footer__item {
+    
+    a {
+
+        transition: .3s ease;
+        &:hover {
+            color: darken($white, 40%);
+        }
+    }
+
+    &:nth-child(2) {
+        margin: 0 40px;
+    }
+
+    @include breakpoint ($mobile__440-bp) {
+        &:nth-child(2) {
+            margin: 10px 0;
+        }
+    }
+} 
+
+.footer__nav-contacts {
+    margin-top: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    @include breakpoint ($mobile__440-bp) {
+        margin-top: 34px;
+    }
+}
+
+.footer__nav-contacts-item {
+    display: flex;
+    flex-direction: column-reverse;
+    color: #BFBFBF !important;
+    text-decoration: none !important;
+    margin-right: auto;
+
+    text-align: left;
+
+    &:nth-child(1) {
+        margin-bottom: 6px;
+    }
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 1.5px;
+        background-color: transparent;
+        transition: all .3s ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+        background-color: #BFBFBF;
+        text-decoration: none;
+    }
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Jost', sans-serif;
+}
+
+.footer__contacts-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer__contacts-paragraph {
+    width: 160px;
+
+    font-size: 11px;
+    font-weight: 400;
+    color: #BFBFBF;
+    line-height: 1.2;
+
+    margin: 5px 0 13px;
+}
+
+.footer__form {
+    width: 216px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts-input {
+    padding: 9px 0 9px 10px;
+
+    font-size: 15px;
+    border: 1px solid $black;
+    border-radius: 5px 5px 0 0;
+}
+
+.footer__contacts-btn {
+    width: 216px;
+    padding: 12px 0;
+
+    background-color: $black;
+    color: $white;
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+
+    border-radius: 0 0 5px 5px;
+    border: solid 1px $black;
+    transition: .4s ease;
+
+    &:hover {
+        background-color: #111111;
+    }
+}

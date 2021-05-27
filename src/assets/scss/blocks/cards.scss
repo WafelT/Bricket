@@ -1,0 +1,156 @@
+.cards {
+    margin-top: 88px;
+    margin-bottom: 132px;
+
+    @include breakpoint ($desktop__1200-bp) {
+        margin-top: 68px;
+        margin-bottom: 100px;
+    }
+
+    @include breakpoint ($mobile__440-bp) {
+        margin-bottom: 76px;
+    }
+
+    @include breakpoint ($mobile__400-bp) {
+        margin-bottom: 60px;
+    }
+}
+
+.cards__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint ($desktop__1200-bp) {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include breakpoint ($mobile__575-bp) {
+        padding: 0 15px;
+    }
+}
+
+.card {
+    width: 360px;
+
+    padding: 32px;
+    border: 1px solid $black;
+    border-radius: 0px;
+
+    @include breakpoint ($desktop__1200-bp) {
+        width: 440px;
+        padding: 21px 32px 32px 32px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        &--ml {
+            margin-left: 20px;
+            
+            @include breakpoint ($tablet__992-bp) {
+                margin: 20px 0;
+            }
+        }
+        
+        &--mb {
+            margin-top: 20px;
+            
+            @include breakpoint ($tablet__992-bp) {
+                margin-top: 0;
+            }
+        }
+        
+        @include breakpoint ($tablet__992-bp) {
+            width: 509px;
+        }
+        
+        @include breakpoint ($mobile__500-bp) {
+            flex-direction: column;
+        }
+    }
+    @include breakpoint ($mobile__500-bp) {
+        width: 340px;
+    }
+    
+    @include breakpoint ($mobile__440-bp) {
+        padding: 19px;
+        width: 254px;
+    }
+}
+
+.card__heading {
+    margin-top: 11px;
+
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+
+    @include breakpoint ($desktop__1200-bp) {
+        margin-top: 56px;
+        margin-left: 15px;
+
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    @include breakpoint ($desktop__1200-bp) {
+
+        &--br {
+            width: 50%;
+            margin-top: 39px;
+        }
+    }
+
+    @include breakpoint ($mobile__500-bp) {
+        margin-top: 14px;
+        margin-left: 0;
+        font-size: 28px;
+        text-align: center;
+
+        &--br {
+            width: auto;
+        }
+    }
+
+    @include breakpoint ($mobile__440-bp) {
+        font-size: 24px;
+    }
+}
+
+.card__paragraph {
+    margin-top: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: $paragraph-color;
+    line-height: 1.3;
+
+    @include breakpoint ($mobile__500-bp) {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    @include breakpoint ($mobile__440-bp) {
+        padding: 0;
+        font-size: 15px;
+    }
+}
+
+.card__icon {
+    width: 99px;
+    height: 103px;
+
+    &--ft {
+        margin-top: 14px;
+
+        width: 96px;
+        height: 89px;
+    }
+
+    @include breakpoint ($mobile__500-bp) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

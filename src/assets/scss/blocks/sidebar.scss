@@ -1,0 +1,26 @@
+.sidebar {
+    height: 100vh;
+    width: 227px;
+    background-color: $white;
+
+    display: none;
+    position: fixed;
+    z-index: 30;
+    top: 85px;
+    right: 0;
+
+    transition: .4s ease;
+
+    @include breakpoint ($mobile__575-bp) {
+        display: block;
+    }
+
+    @include breakpoint ($mobile__440-bp) {
+        top: 64px;
+    }
+}
+
+.sidebar-wrapper {
+    padding: 0 27px;
+    height: 100%;
+}

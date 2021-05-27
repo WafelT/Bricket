@@ -1,0 +1,57 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    margin-top: 5px;
+    
+    display: block;
+    width: 52px;
+    height: 30px;
+    background-color: #fff;
+    position: relative;
+
+    @include breakpoint ($mobile__440-bp) {
+        padding-right: 0;
+        margin-left: auto;
+        width: 39px;
+    }
+    
+    .burger__line {
+        margin-left: auto;
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin-bottom: 8px;
+        position: relative;
+        background: $black;
+        border-radius: 20px;
+        z-index: 10;
+    }
+    
+
+    .burger__line:nth-last-child(1) {
+        margin-bottom: 0;
+        width: 40px;
+
+        transition: .4s ease;
+    }
+
+    @include breakpoint ($mobile__440-bp) {
+        .burger__line {
+            width: 32px;
+            margin-bottom: 5px;
+            height: 3px;
+            
+            &:nth-last-child(1) {
+                width: 32px;
+            }
+
+            &:nth-last-child(3) {
+                margin-top: 6px;
+            }
+        }
+    }
+}
