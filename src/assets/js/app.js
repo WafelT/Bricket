@@ -5,6 +5,8 @@ const contactBtn = document.getElementById('contactBtn');
 const contacts = document.querySelector('.nav__contact--dk');
 const body = document.querySelector('body');
 const burgerLine = document.querySelector('.burger__line--move');
+const logoLine = document.querySelector('.logo-line');
+const logoLineMobile = document.querySelector('.logo-line-black');
 
 contactBtn.addEventListener('click', function () {
     contacts.classList.toggle('none');
@@ -24,4 +26,10 @@ document.addEventListener('click', function(event) {
     if(event.target.closest("#contactBtn")) return
     contacts.classList.add('none');
 });
+
+$(document).ready(function() {
+    logoLine.style.width = "76%"
+    logoLineMobile.style.width = "76%"
+})
+
 

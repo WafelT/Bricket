@@ -442,19 +442,12 @@ button {
       height: 27px; } }
 
 .logo-heading {
-  margin-left: 13px;
   display: flex;
   flex-direction: column-reverse;
   font-size: 30px;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
   letter-spacing: -0.01em; }
-  .logo-heading:before {
-    content: "";
-    height: 2px;
-    width: 76%;
-    background-color: #fff;
-    margin-left: 1.5px; }
   @media (max-width: 991.5px) {
     .logo-heading--mb::before {
       background-color: #000; } }
@@ -466,6 +459,21 @@ button {
       font-size: 23px; }
       .logo-heading::before {
         height: 1.5px; } }
+
+.logo-wrapper {
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .logo-wrapper--mb {
+    margin-top: 6px; }
+
+.logo-line {
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  margin-left: 1.5px;
+  transition: .4s ease; }
 
 .meeting__content-main {
   font-size: 50px;
@@ -1304,6 +1312,13 @@ button {
   @media (max-width: 575px) {
     .mobile__nav {
       display: flex; } }
+
+.logo-line-black {
+  height: 2px;
+  width: 0%;
+  background-color: #000;
+  margin-left: 1.5px;
+  transition: .4s ease; }
 
 .mobile__nav-wrapper {
   width: 100%;

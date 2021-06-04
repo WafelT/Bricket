@@ -6,6 +6,15 @@
     }
 }
 
+.logo-line-black {
+    height: 2px;
+    width: 0%;
+    background-color: $black;
+    margin-left: 1.5px;
+
+    transition: .4s ease;
+}
+
 .mobile__nav-wrapper {
     width: 100%;
     margin: 23px 10px 24px;

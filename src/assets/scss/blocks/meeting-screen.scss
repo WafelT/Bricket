@@ -86,7 +86,6 @@
 }
 
 .logo-heading {
-    margin-left: 13px;
 
     display: flex;
     flex-direction: column-reverse;
@@ -95,14 +94,6 @@
     font-family: 'Jost', sans-serif;
     font-weight: 600;
     letter-spacing: -0.01em;
-
-    &:before {
-        content: "";
-        height: 2px;
-        width: 76%;
-        background-color: $white;
-        margin-left: 1.5px;
-    }
     
     @include breakpoint ($tablet__992-bp) {
         &--mb {
@@ -124,6 +115,27 @@
             height: 1.5px;
         }
     }
+}
+
+.logo-wrapper {
+    margin-left: 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--mb {
+        margin-top: 6px;
+    }
+}
+
+.logo-line {
+    height: 2px;
+    width: 0%;
+    background-color: $white;
+    margin-left: 1.5px;
+
+    transition: .4s ease;
 }
 
 .meeting__content-main {
