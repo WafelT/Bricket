@@ -19,6 +19,8 @@
     text-align: center;
     font-weight: 600;
 
+    text-shadow: $textShadow;
+
     @include breakpoint ($mobile__440-bp) {
         font-size: 20px;
         margin: 0;
@@ -68,6 +70,7 @@
 
 .about__information-heading {
     font-size: 25px;
+    text-shadow: $textShadow;
 
     @include breakpoint ($desktop__1200-bp) {
         font-size: 18px;
@@ -182,6 +185,8 @@
 .about__order-heading {
     display: flex;
     flex-direction: column-reverse;
+
+    text-shadow: $textShadow;
 
     white-space: nowrap;
     font-size: 25px;

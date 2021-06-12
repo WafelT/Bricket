@@ -78,6 +78,8 @@
     display: flex;
     line-height: 1;
 
+    text-shadow: $textShadow;
+
     @include breakpoint ($mobile__575-bp) {
         &--sidebar {
             margin-left: 21px;

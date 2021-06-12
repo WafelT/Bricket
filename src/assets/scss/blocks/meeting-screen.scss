@@ -171,6 +171,8 @@
     font-size: 20px;
     line-height: 1.5;
 
+    color: #eaeaea;
+
     font-weight: 500;
 
     @include breakpoint ($mobile__575-bp) {

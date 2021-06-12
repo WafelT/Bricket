@@ -530,7 +530,6 @@ button {
 }
 
 .logo-heading {
-    margin-left: 13px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column-reverse;
@@ -539,14 +538,6 @@ button {
     font-family: 'Jost', sans-serif;
     font-weight: 600;
     letter-spacing: -0.01em;
-}
-
-.logo-heading:before {
-    content: "";
-    height: 2px;
-    width: 76%;
-    background-color: #fff;
-    margin-left: 1.5px;
 }
 
 @media (max-width: 991.5px) {
@@ -569,6 +560,28 @@ button {
     .logo-heading::before {
         height: 1.5px;
     }
+}
+
+.logo-wrapper {
+    margin-left: 13px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logo-wrapper--mb {
+    margin-top: 6px;
+}
+
+.logo-line {
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    margin-left: 1.5px;
+    transition: .4s ease;
 }
 
 .meeting__content-main {
@@ -636,7 +649,7 @@ button {
     display: none;
     position: fixed;
     z-index: 30;
-    top: 85px;
+    top: 105px;
     right: 0;
     transition: .4s ease;
 }
@@ -1930,6 +1943,14 @@ button {
         display: -ms-flexbox;
         display: flex;
     }
+}
+
+.logo-line-black {
+    height: 2px;
+    width: 0%;
+    background-color: #000;
+    margin-left: 1.5px;
+    transition: .4s ease;
 }
 
 .mobile__nav-wrapper {
