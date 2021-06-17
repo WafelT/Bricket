@@ -7,6 +7,7 @@ const body = document.querySelector('body');
 const burgerLine = document.querySelector('.burger__line--move');
 const logoLine = document.querySelector('.logo-line');
 const logoLineMobile = document.querySelector('.logo-line-black');
+const navItem = document.querySelectorAll('.nav__item');
 
 contactBtn.addEventListener('click', function () {
     contacts.classList.toggle('none');
@@ -30,6 +31,10 @@ document.addEventListener('click', function(event) {
 $(document).ready(function() {
     logoLine.style.width = "76%"
     logoLineMobile.style.width = "76%"
-})
+});
 
-
+$('.nav__item').on('click', function() {
+    sidebar.classList.add('none');
+    body.classList.remove('show-sidebar');
+    burgerLine.classList.remove('moving-line');
+});

@@ -74,6 +74,20 @@
     }
 }
 
+.nav__item--contact:hover + .nav__contact {
+    display: block !important;
+    transition: .4s ease;
+}
+
+.nav__item--contact:hover .nav__contact {
+    display: block !important;
+    transition: .4s ease;
+}
+
+.nav__contact:hover {
+    display: block !important;
+}
+
 .nav__item {
     display: flex;
     line-height: 1;
@@ -96,6 +110,10 @@
     &--contact {
         cursor: pointer;
         user-select: none;
+
+        > .nav__contact {
+            display: block;
+        }
 
         a {
             &::before {
@@ -143,6 +161,7 @@
 }
 
 .nav__contact {
+    display: none;
     margin-top: 11px;
 
     padding: 17px 17px 17px 16px;
@@ -156,6 +175,9 @@
     user-select: none;
     font-size: 16px;
     font-weight: 600;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+    transition: .4s ease;
 
     &--dk {
         position: absolute;

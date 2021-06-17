@@ -624,6 +624,7 @@ button {
     width: 490px;
     font-size: 20px;
     line-height: 1.5;
+    color: #eaeaea;
     font-weight: 500;
 }
 
@@ -649,7 +650,7 @@ button {
     display: none;
     position: fixed;
     z-index: 30;
-    top: 105px;
+    top: 85.6px;
     right: 0;
     transition: .4s ease;
 }
@@ -759,6 +760,7 @@ button {
     display: -ms-flexbox;
     display: flex;
     line-height: 1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 575px) {
@@ -846,6 +848,7 @@ button {
     user-select: none;
     font-size: 16px;
     font-weight: 600;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 .nav__contact--dk {
@@ -893,6 +896,7 @@ button {
     font-size: 60px;
     text-align: center;
     font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 440px) {
@@ -963,6 +967,7 @@ button {
 
 .about__information-heading {
     font-size: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 1199.5px) {
@@ -1039,6 +1044,7 @@ button {
 .about__collage-item {
     width: 165px;
     height: 248px;
+    box-shadow: 4px 1px 30px rgba(0, 0, 0, 0.25);
 }
 
 .about__collage-item:nth-child(2) {
@@ -1120,6 +1126,7 @@ button {
     display: flex;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     white-space: nowrap;
     font-size: 25px;
     font-weight: 500;
@@ -1370,6 +1377,9 @@ button {
 
 .card__heading {
     margin-top: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 25px;
     font-weight: 600;
     font-family: 'Jost', sans-serif;
@@ -1435,6 +1445,8 @@ button {
 .card__icon {
     width: 99px;
     height: 103px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card__icon--ft {

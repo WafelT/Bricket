@@ -1,16 +1,16 @@
 .about {
-    margin-top: 123px;
+    padding-top: 123px;
 
     @include breakpoint ($tablet__992-bp) {
-        margin-top: 96px;
+        padding-top: 96px;
     }
 
     @include breakpoint ($mobile__575-bp) {
-        margin-top: 75px;
+        padding-top: 75px;
     }
 
     @include breakpoint ($mobile__440-bp) {
-        margin-top: 33px;
+        padding-top: 33px;
     }
 }
 
@@ -131,6 +131,8 @@
     width: 165px;
     height: 248px;
 
+    box-shadow: 4px 1px 30px rgba(0, 0, 0, 0.25);
+
     &:nth-child(2) {
         margin: 0 20px;
 
@@ -202,6 +204,10 @@
         background-color: $black;
 
         transition: .4s ease;
+        
+        @include breakpoint ($mobile__575-bp) {
+            height: 2px;
+        }
     }
 
     @include breakpoint ($mobile__575-bp) {

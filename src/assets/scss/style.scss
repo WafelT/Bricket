@@ -2,6 +2,10 @@
 @import "vars";
 @import "mixins";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .show-sidebar {
     overflow: hidden;
 
