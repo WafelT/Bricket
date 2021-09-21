@@ -1,8 +1,8 @@
 {
-    "name": "brainscloud",
+    "name": "wafelt",
     "version": "1.0.0",
-    "description": "brainscloud",
-    "author": "brainscloud",
+    "description": "wafelt",
+    "author": "wafelt",
     "devDependencies": {
         "@babel/core": "^7.13.8",
         "@babel/preset-env": "^7.13.9",
